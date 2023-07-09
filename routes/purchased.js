@@ -61,7 +61,7 @@ router.get("/:UID/product/:PID", async (req, res) => {
     }
   });
   
-  router.get("/:UID", async (req, res) => {
+  router.get("/:UID/product", async (req, res) => {
     try {
       const productspur = await User.find({_id : req.params.UID});
       console.log("send");
